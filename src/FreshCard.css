@@ -1,0 +1,40 @@
+.card-title{
+    font-size: 1.3rem;
+    color: #002f34;
+    font-weight: 700;
+}
+.card-text{
+    color: rgb(116, 113, 113);
+    font-size: 1rem;
+}
+.freshImg{
+    margin-left: 50px;
+    height: 140px;
+    width: 190px !important;
+}
+.card-text > span{
+    /* font-size: 50px !important; */
+}
+.heartIcon1:hover{
+    cursor: pointer;
+   
+}
+.heartIconfFill{
+    color: #e31b23 !important ;
+}
+.heartIconfFill:hover{
+    cursor:  pointer !important;
+}
+.img{
+    display: flex !important;
+    justify-content: space-between !important;
+}
+
+.ind-card {
+    max-height: 280px !important;
+
+  }
+  .card{
+    width: 300px !important;
+    max-height: 270px !important;
+}

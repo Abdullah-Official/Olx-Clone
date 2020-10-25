@@ -1,0 +1,38 @@
+.heading{
+    font-size: 24px;
+    color: #002f34;
+}
+.buttonLoad > button{
+    color: #002f34;
+    font-weight: 500;
+    border-radius: 4px;
+    border: 2px solid #002f34;
+    padding: 0 10px;
+    font-size: 16px;
+    height: 48px;
+    background-color: #ffff !important;
+}
+.buttonLoad > button:hover{
+    border: 5px solid #002f34;
+}
+.buttonLoad{
+    align-items: center !important;
+    justify-content: center;
+    display: flex;
+}
+.noMore{
+    align-items: center !important;
+    justify-content: center;
+    display: flex;        
+}
+@media(max-width: 812px){
+    .FreshMedia{
+        margin-top: 880px !important;
+    }
+}
+/* @media(max-width: 603px){
+    .FreshMedia{
+        margin-top: 300px !important;
+        
+    }
+     */

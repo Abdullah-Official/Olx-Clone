@@ -1,0 +1,39 @@
+.mainDiv{
+    background-color:#002f34;
+    padding: 19px;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+
+.boldOne{
+    color: white;
+    font-size: 13.5px;
+    font-weight: bold;
+}
+
+.anchoR{
+    color:white;
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+@media(max-width:800){
+    .right , .left{
+        text-align: center !important;
+        justify-content: center !important;
+        /* display: flex !important; */
+    }
+    .left , .right{
+        float: none !important;
+    }
+    .boldOne,.anchoR{
+        text-align: center !important;
+        justify-content: center !important;
+        /* display: flex !important; */
+    }
+}

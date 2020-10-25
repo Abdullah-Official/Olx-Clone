@@ -1,0 +1,31 @@
+.sellCard{
+    width: 300px !important;
+    max-height: 300px !important;
+    background-color: #3a77ff;
+    margin: 3px !important;
+}
+.sellTitle{
+    font-size: 17px !important;
+    color: white;
+}
+.sellText{
+    font-size: 14px !important;
+    color: white !important;
+    word-spacing: 1px;
+}
+.sellBtnCard{
+    background-color: #3a77ff !important;
+    border: 2px solid white;
+    padding: 3px !important;
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-weight: 600;
+    margin-top: 50px !important;
+    font-size: 14px;
+}
+.sellBtnCard:hover{
+    border: 4px solid white !important;
+}

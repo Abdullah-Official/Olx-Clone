@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+     font-family: -apple-system, BlinkMacSystemFont, 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    ;
+}
+
+.footerMainContainer{
+    background-color: #ECEEF1 !important;
+    padding: 25px;
+}
+
+.list__footer > li{
+    list-style: none;
+    text-transform: capitalize;
+    line-height: 20px;
+    text-size-adjust: 100%;
+    font-weight: 400;
+    font-size: 12.5px;
+    color: rgba(0,47,52,.64) !important; 
+    justify-content: left;
+}
+.headingFooter{
+    font-weight: 700;
+    text-transform: uppercase;
+    flex-basis: 20%;
+    font-size: 14px;
+    line-height: 20px;
+    color: #002f34;
+    text-align: left;
+    text-size-adjust: 100%;
+    padding-bottom: 50px;
+    justify-content: left;
+}
+.FooterContent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 5px sloid #002f34 !important;
+
+    
+}
+.part1 , .part2 ,.part3, .part4, .part5{
+    justify-content: left;
+}
+
+
+.hideLi{
+    color: transparent !important;
+}
+
+
+@media(max-width: 800px){
+    .FooterContent{
+        display: block;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    .part1 , .part2 ,.part3, .part4, .part5{
+        justify-content: center;
+    }
+}
+.social{
+    color: rgba(0,47,52,.64);
+    padding: 1px !important;
+}
+
+.appIcons > img{
+    width: 100px !important;
+    height: 30px !important;
+}

@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+.banner__container{
+    background-color: rgba(0,47,52,.03);
+}
+.olx_App > div > strong{
+    font-size: 34px;
+    line-height: 40px;
+    text-transform: uppercase;
+    font-weight: bold !important;
+    color: #002f34;
+    text-size-adjust: 100%;
+    font-family: Roboto,Arial,Helvetica,sans-serif;
+}
+.olx_App > div > p{
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 600px !important;
+    color: #002f34;
+    font-family: Roboto,Arial,Helvetica,sans-serif;
+}
+.verticle__line{
+    width: 2px;
+    margin: 0 auto;
+    background-color: rgba(0,47,52,.2);
+    border: 0 solid rgba(0,47,52,.2);
+    height: 136px;
+}
+.olx_App{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.get_your_appText{
+
+}
+.appIcons{
+    /* justify-content: space-between; */
+    align-items: center;
+    display: flex;
+    
+}
+.appIcons > img{
+    width: 128px;
+    height: 140px;
+    border-style: none;
+    cursor: pointer;
+}
+
+.OlxBanner__MEDIA{
+    border-bottom: 3px sloid #002f34 !important;
+
+}
+
+
+
+@media(max-width: 812px){
+    .OlxBanner__MEDIA{
+        margin-top: 3430px;
+    }
+    .olx_mobileImage >img{
+        width: 290px !important;
+    }
+}
+
+/* 
+@media(min-width: 578px) and (max-width:702px){
+    .OlxBanner__MEDIA{
+        margin-top:1108px;
+    }
+}
+
+@media(max-width: 806px){
+    .OlxBanner__MEDIA{
+        margin-top:2px;
+    }
+} */

@@ -1,0 +1,89 @@
+.banner1{
+    background-image: url('https://statics.olx.com.pk/external/base/img/hero_bg_pk.jpg');
+     height: 252px;
+    background-repeat: no-repeat;
+    background-position: 50% !important;
+    background-size: cover;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    margin-bottom: 0%;
+    width: 100%;
+    
+   
+}
+.banner2{
+    
+    background-image: url('https://tpc.googlesyndication.com/simgad/1123053959195589078');   
+    margin-top: 20px;
+    background-size: cover;
+    background-attachment: static;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+      
+}
+/* .banner__pop{
+    
+    background-image: url('https://tpc.googlesyndication.com/simgad/12756253881537486263');   
+    margin-top: 20px;
+    background-size: cover;
+    background-attachment: static;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+} */
+.hidden{
+    color: transparent !important;
+}
+.btnHide{
+    color: transparent !important;
+    display: none !;
+    background-color: transparent !important;
+    border: none !important;
+}
+.Carousel{
+    position: relative;
+}
+
+@media(max-width: 400px){
+    .banner1{
+        width: 373px;
+        height: 252px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    }
+    .banner2{
+        display: none;
+    }
+}
+
+@media(max-width:175px){
+    .banner1{
+        width: 373px;
+        height: 252px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    }
+    .banner2{
+        display: none;
+    }
+}
+@media(max-width:255){
+    .App{
+        width: 100%;
+        height: 100vh;
+        /* align-items: center;
+        justify-content: center; */
+}
+}
+
+@media(max-width:540){
+    .banner1{
+        width:540px !important;
+
+    }
+}
