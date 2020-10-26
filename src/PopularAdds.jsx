@@ -8,7 +8,7 @@ function PopularAdds() {
     return (
         <>
             <div className="container-fluid">
-                <div className="row">
+                <div className="row gy-3">
                     
                     {
                      CardData.map((value,index)=>{

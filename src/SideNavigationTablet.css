@@ -1,0 +1,95 @@
+.filters{
+    font-size: 18px;
+    color: #002f34;
+}
+.categories_Heading >strong{
+    color: #002f34;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    cursor: pointer;
+}
+
+.categories_Heading,.location_Heading, .make_Heading, .price_Heading, .condition_Heading{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.subCategories ul li, .subLocations ul li, .subMake ul li {
+    list-style: none;
+    color: rgba(0,47,52,.64);
+    cursor: pointer;
+    font-size: 15px;
+    
+}
+.boldMob{
+    color: #002f34;
+    font-weight: 700;
+}
+.inputPrice{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.inputPrice > input{
+    background: #ebeeef;
+    outline: none;
+    height: 40px;
+    width: 112px;
+    border: none;
+    border-bottom: 1px solid rgba(0,47,52,.64);
+    box-sizing: border-box;
+    padding: 0 16px;
+    margin: 0 8px 0 0;
+    font-size: 14px;
+}
+.inputPrice > span{
+    background-color: rgba(0,47,52,.36);
+    position: relative;
+    cursor: pointer;
+    height: 40px;
+    flex: 0 0 40px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    display: flex;
+    border: 1px solid rgba(0,47,52,.36);
+    box-sizing: border-box;
+    background-clip: content-box;
+}
+
+.checkbox-container{
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.checkbox-container > input{
+    position: relative;
+    width: 24px;
+    height: 24px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+.inputCondition{
+    display: flex;
+    justify-content: start;  
+}
+
+.label-container > label{
+    color: rgba(0,47,52,.64);
+    font-size: 15px;
+}
+.label-container > label >span{
+    color: rgba(0,47,52,.36);
+    cursor: pointer;
+}
+div >  .viewAll{
+    color: #002f34;
+    font-weight: 700;
+}
