@@ -3,6 +3,7 @@ import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
 import CardData from './CardData'
 import './FreshCard.css'
 import FavoriteIcon from '@material-ui/icons/Favorite';
+import './PopularCommon.css'
 
 function PopularCard(props) {
 
@@ -25,7 +26,7 @@ function PopularCard(props) {
         
        <div className="img ind-card">
        
-        <img class="card-img-top freshImg" style={{width:'110px', maxHeigh:'180px',alignItems:'center'}} src={props.imgsrc} alt="Bologna"/>
+        <img class="card-img-top img-fluid freshImg" style={{width:'', maxHeigh:'',alignItems:'center'}} src={props.imgsrc} alt="Bologna"/>
             <div onClick={changeIcon} onDoubleClick={backToNormal}>
             {heart}
             </div>
@@ -33,8 +34,9 @@ function PopularCard(props) {
         
         <div class="card-body">
     <h4 class="card-title">{props.price}</h4>
-    <h6 class="card-subtitle mb-2 text-muted">{props.title}</h6>
-    <p class="card-text"><small style={{fontSize:'11px',float:'left',marginTop:'23px',marginLeft:'0px'}}>{props.place}</small></p>
+    <h6 class="card-subtitle mb-2 text-muted" style={{fontSize:'15px', fontWeight:'400',color:'rgba(0,47,52,.64);'}}>{props.title}</h6>
+    <p class="card-text"><small style={{fontSize:'9px',float:'left',marginTop:'23px',marginLeft:'0px'}}>{props.place}</small></p>
+    {/* <p className=' card-text'>{props.para}</p> */}
           <p class="card-text"><small style={{fontSize:'11px',float:'right',marginTop:'15px',marginLeft:'30px'}}>TODAY</small></p>
           
         </div>

@@ -1,11 +1,22 @@
-import React from 'react'
+import React,{useState} from 'react'
 import CommonPopularHeader from './CommonPopularHeader'
 import NavbarCat from './NavbarCat'
-import PopularAdds from './PopularAdds'
+// import PopularAdds from './PopularAdds'
 import PopularTop from './PopularTop'
+import PopularAdTab from './PoupularAdTab'
 import SideNavigationTablet from './SideNavigationTablet'
 
 function PopularTablets() {
+    const [fresh,setFresh] = useState('')
+
+    const loadMore = () =>{
+        setFresh(()=>{
+            return <p className=' my-3 alert alert-danger alert-dismissible fade show'>Sorry ! there are no more ADD's ..
+            <i className="close" style={{cursor:'pointer'}} data-dismiss="alert" aria-label="Close">&times;</i>
+            </p>
+            
+        })
+    }
     return (
         <>
         <NavbarCat/>
@@ -26,13 +37,22 @@ function PopularTablets() {
                         <SideNavigationTablet/>
                     </div>
                     <div className="col-md-9">
-                       <PopularTop adds='12'/> 
+                       <PopularTop adds='13'/> 
                         <hr/>
 
-                        <PopularAdds adds='12'/>
+                        <PopularAdTab adds='12'/> <br/>
+                        <div className="container">
+                        {fresh}
+                        <div className="buttonLoad ml-5 my-3">
+                            <button onClick={loadMore}>Load More</button>
+                        </div>
+           
+                        </div>
                     </div> 
-                </div>
-            </div> <br/> <br/>
+                    </div> 
+               
+                <br/> <br/>
+            </div> 
         </>
     )
 }
