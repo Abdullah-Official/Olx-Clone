@@ -5,6 +5,7 @@ import banner2 from './Images/banner2.jpg'
 import JumboImage from './Images/JumboImage.jpg'
 import NavigateNextIcon from '@material-ui/icons/NavigateNext';
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
+import { NavLink } from 'react-router-dom'
 
 function CardCarousel() {
     return (
@@ -18,9 +19,9 @@ function CardCarousel() {
 <div className="container-fluid   carouselContainer p-4">
     <div className="carousel__header">
     <h6 className="ml-2 heading">More on Mobile Phones</h6>
-    <a href="#" className="mr-2">View More</a>
+    <NavLink to="/mobile" className="mr-2">View More</NavLink>
     </div>
-<div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
+<div id="carouselExampleIndicators1" className="carousel slide" data-ride="carousel">
 
 <div className="carousel-inner mt-3 align-items-center    ">
 <div className="carousel-item active  ">
@@ -42,9 +43,9 @@ function CardCarousel() {
     </div>
     <div className="col-md-3 col-sm-6 p-2 ind-card">
         <CommonCard
-         price='Rs 48,000'
-         model='Oppo A5s'
-         img='https://apollo-singapore.akamaized.net/v1/files/x13orwgjhrv11-PK/image;s=300x600;q=60'
+         price='Rs 33,000'
+         model='Iphone7 128gb'
+         img='https://apollo-singapore.akamaized.net/v1/files/p46uh887aqxi-PK/image;s=300x600;q=60'
         
         />
     </div>
@@ -77,17 +78,16 @@ function CardCarousel() {
     </div>
     <div className="col-md-3 col-sm-6 p-2 ind-card">
         <CommonCard
-        // style={{height:'400px'}}
-         price='Rs 80,000'
-         model='iPhone Xs Max 64 GB FaceTime'
-         img='https://apollo-singapore.akamaized.net/v1/files/guxhssxnnbjn1-PK/image;s=00x600;q=60'
+         price= 'Rs 90,899'
+        model= 'Redmi 9 Pin Pack'
+        img = 'https://apollo-singapore.akamaized.net/v1/files/udbx3blsottm-PK/image;s=200x400;q=60'
         />
     </div>
     <div className="col-md-3 col-sm-6 p-2 ind-card">
         <CommonCard
-         price='Rs 87,000'
-         model='iPhone X 256 GB'
-         img='https://apollo-singapore.akamaized.net/v1/files/l13cy54f4fwf3-PK/image;s=300x600;q=60'
+         price= 'Rs 100,000'
+         model ='Note 10 plus 5g 12 gb ram'
+         img = 'https://apollo-singapore.akamaized.net/v1/files/al0babkhe5rk2-PK/image;s=200x400;q=60'
         />
     </div>
 </div>
@@ -98,11 +98,11 @@ function CardCarousel() {
 
 
 </div>
-<a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+<a className="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
 <span className="prev  mr-3" aria-hidden="true"><ArrowBackIosIcon/></span>
 <span className="sr-only">Previous</span>
 </a>
-<a className="carousel-control-next " href="#carouselExampleIndicators" role="button" data-slide="next">
+<a className="carousel-control-next " href="#carouselExampleIndicators1" role="button" data-slide="next">
 <span style={{color:'black'}} className=" next ml-3" aria-hidden="true">
 <NavigateNextIcon fontSize='large'/>
 </span>

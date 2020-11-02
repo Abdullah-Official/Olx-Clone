@@ -55,14 +55,14 @@
 
 
 
-@media(max-width: 812px){
+/* @media(max-width: 812px){
     .OlxBanner__MEDIA{
         margin-top: 3430px;
     }
     .olx_mobileImage >img{
         width: 290px !important;
     }
-}
+} */
 
 /* 
 @media(min-width: 578px) and (max-width:702px){

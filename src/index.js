@@ -1,11 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import store from './app/store';
 import { Provider } from 'react-redux';
 import * as serviceWorker from './serviceWorker';
 import {BrowserRouter} from 'react-router-dom'
+import Login from './Login';
+import AfterLogin from './AfterLogin';
+import AfterApp from './AfterApp';
+import App from './App';
 
 
 ReactDOM.render(
@@ -13,7 +16,7 @@ ReactDOM.render(
     <Provider store={store}>
 
       <BrowserRouter>
-      <App />
+      <App/>
       </BrowserRouter>
 
     </Provider>

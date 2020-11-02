@@ -3,7 +3,7 @@ const MotorData = [
     
     {
         price: 'Rs 115,000',
-        title: 'Yamaha YBR125 Mirpur Number 27000',
+        title: 'Yamaha YBR125 Mirpur Number',
         place: 'MIRPUR, AZAD KASHMIR',
         imgsrc: 'https://apollo-singapore.akamaized.net/v1/files/s8d2aim7eyqm-PK/image;s=300x600;q=60'
     },

@@ -1,0 +1,95 @@
+.modal-dialog{
+    background-color: white !important;
+}
+.buttonLoad2 > button{
+    color: #002f34;
+    font-weight: 500;
+    border-radius: 4px;
+    border: 2px solid #002f34;
+    padding: 0 10px;
+    font-size: 16px;
+    height: 48px;
+    width: 900px;
+    background-color: #ffff !important;
+ 
+}
+.buttonLoad2 > button:hover{
+    border: 5px solid #002f34;
+}
+.buttonLoad2{
+    align-items: center !important;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    
+    
+}
+
+.t1 > p {
+    font-size: 12px;
+}
+.t2 > a{
+    text-decoration: none;
+    color: #3a77ff;
+    font-size: 13px;
+    text-align: center;
+}
+.t2 > .sub{
+    text-align: center;
+    color: rgba(0,47,52,.64);
+    font-size: 12px;
+}
+.footerM{
+    text-align: center;
+}
+.modal-dialog{
+    width: 30%
+}
+
+.carouselLogin > img{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    margin-left: 125px;
+}
+.carouselLogin > p{
+    font-size: 16px;
+}
+.carouselLogin{
+    margin-right: 10px !important;
+}
+.close{
+    float: right;
+    font-size: 30px;
+}
+.lastp{
+    margin-left: 35px;
+}
+.p2{
+    margin-left: 69px;
+}
+.p1{
+    margin-left: 40px !important;
+}
+.prev__icon , .nxt__icon{
+    width: 16px;
+    height: 16px;
+    fill: gray !important;
+    color: gray !important;
+}
+.carouselLogin > p{
+    font-weight: 500;
+    box-sizing: border-box;
+    font-size: 15px;
+    color: #002f34;
+}
+.carouselLogin > p:hover{
+    color: #002f34;
+}
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    color: aqua !important;
+    fill: aqua;
+  }

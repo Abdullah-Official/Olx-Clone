@@ -1,7 +1,7 @@
-.sellCard{
+.sellCard1{
     width: 300px !important;
     max-height: 300px !important;
-    background-color: #3a77ff;
+    background-color: #3a77ff !important;
     margin: 3px !important;
 }
 .sellTitle{
@@ -15,7 +15,7 @@
 }
 .sellBtnCard{
     background-color: #3a77ff !important;
-    border: 2px solid white;
+    border: 2px solid white !important;
     padding: 3px !important;
     padding-left: 8px !important;
     padding-right: 8px !important;
@@ -23,8 +23,9 @@
     justify-content: center;
     display: flex;
     font-weight: 600;
-    margin-top: 50px !important;
+    margin-top: 80px !important;
     font-size: 14px;
+    width: 100% !important;
 }
 .sellBtnCard:hover{
     border: 4px solid white !important;

@@ -2,6 +2,9 @@
     font-size: 24px;
     color: #002f34;
 }
+.FreshMedia{
+    /* height: auto !important; */
+}
 .buttonLoad > button{
     color: #002f34;
     font-weight: 500;
@@ -25,6 +28,18 @@
     justify-content: center;
     display: flex;        
 }
+.uploadImg{
+    /* display: block; */
+    /* justify-content: center !important; */
+    /* align-items: center; */
+    /* border: 1px solid black;
+    height: 80px !important;
+    width: 100px !important;
+    background-color: black ;
+    z-index: 11111; */
+    
+}
+
 @media(max-width: 812px){
     .FreshMedia{
         margin-top: 880px !important;

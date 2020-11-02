@@ -54,7 +54,7 @@
 .navbar__search{
     
     outline: none !important;
-    width: 700px !important;
+    width: 650px !important;
     border-radius: 4px;
     padding: 3px;
     background-color: white;
@@ -88,10 +88,10 @@
 .button {
     background-image: linear-gradient(90deg, #FFCF00 17%, #A3E4D7 1%, #3498DB  80%);
     position: relative;
-    padding: 5px;
+    padding: 6px !important;
     display: inline-block;
     border-radius: 80px;
-    width: 100px;
+    width: 100%;
     font-weight: bold;
 }
      .sell{
@@ -99,7 +99,7 @@
       background: #fff;
       color: #002f34;
       text-transform: uppercase;
-      padding: 6px;
+      padding: 8px;
       border-radius: 100px;
       width: 100%;
       font-weight: bold;
@@ -120,4 +120,13 @@
     width: 100% !important;
     height: 8vh !important;
   } */
-  
+.afterIcons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between !important;
+    
+}
+.afterIcons > .AvatarIcons{
+    padding: 10px;
+    margin: 60px;
+}

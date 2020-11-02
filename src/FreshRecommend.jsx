@@ -1,46 +1,46 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './FreshRecommend.css'
 import FreshCard from './FreshCard'
 import CardData from './CardData'
 import SellCard from './SellCard'
+import firebase from './firebase'
 
 function FreshRecommend() {
     const [fresh,setFresh] = useState('')
+    const [DataOfCards,setDataOfCards] = useState('')
 
     const loadMore = () =>{
         setFresh(()=>{
-            return <p className=' my-3 alert alert-danger alert-dismissible fade show'>Sorry ! there are no more ADD's ..
+            return <p className=' my-3 alert alert-danger alert-dismissible fade show'>Sorry ! there are no more AD's ..
             <i className="close" style={{cursor:'pointer'}} data-dismiss="alert" aria-label="Close">&times;</i>
             </p>
             
         })
     }
-    
+    useEffect(()=>{
+        const dataRef = firebase.database().ref('Cards')
+        dataRef.on('value',(snapshot)=>{
+            const data = snapshot.val();
+            const DataOfCards = []
+            for(let id in data){
+                DataOfCards.push(data[id])
+            }
+            setDataOfCards(DataOfCards)
+            console.log(DataOfCards)
+        })
+    },[])
     return (
         <>
-        <div className="FreshMedia" style={{height:'1650px'}}>
-        <div style = {{height:"400px",marginTop:'-90px'}}>
+        <div className="FreshMedia" style={{height:''}}>
+        <div style = {{height:"auto",marginTop:'-90px'}}>
             <div className="container-fluid freshMain" style={{width:'100%'}}>
                 
                <div className="row ">
                <div className="row gx-5 gy-3 mx-auto">
                 <h6 className="heading">Fresh Recommendations</h6>
-            
-                {
-                     CardData.map((value,index)=>{
-                         if(index == 5){
-                             return <div className="col-md-3 col-sm-6 col-lg-3"><SellCard/> </div>
-                         }else{
-                             return <FreshCard
-                             key={index}
-                             price = {value.price}
-                             title = {value.title}
-                             place = {value.place}
-                             imgsrc = {value.imgsrc}
-                             />
-                         }
-                     })
-                 }
+             
+                {DataOfCards ? DataOfCards.map((props)=> <FreshCard place={props.place} price={props.price} imgsrc={props.image} title = {props.product}/>) : 'No Cards Now'}
+                
                     
                 </div>
                </div>

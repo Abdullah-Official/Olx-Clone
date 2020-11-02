@@ -7,7 +7,7 @@ function CommonCard(props) {
     return (
         <>
             
-<div class="card p-3 w-75 ">
+<div class="card cardHover p-2  w-100 ">
        
         
        <div className="img">

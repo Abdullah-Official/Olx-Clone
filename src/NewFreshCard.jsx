@@ -1,12 +1,10 @@
-import React, { useState } from 'react'
-import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
-import CardData from './CardData'
+import React, {useState} from 'react'
 import './FreshCard.css'
 import FavoriteIcon from '@material-ui/icons/Favorite';
-import './PopularCommon.css'
+import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
 
-function PopularCard(props) {
 
+function NewFreshCard() {
     const [heart,setHeart] = useState(<FavoriteBorderIcon className='heartIcon1'/>)
 
     const changeIcon = () =>{
@@ -19,32 +17,29 @@ function PopularCard(props) {
 
     return (
         <>
-           
-            <div className="col-md-4 col-sm-6 col-lg-4">
+            <div className="col-md-3 col-sm-6 col-lg-3">
             <div class="card pt-3 pr-3">
        
         
        <div className="img ind-card">
        
-        <img class="card-img-top  freshImg" style={{width:'', maxHeigh:'',alignItems:'center'}} src={props.imgsrc} alt="Bologna"/>
+        <img class="card-img-top freshImg" style={{width:'110px', maxHeigh:'180px',alignItems:'center'}} src='' alt="Bologna"/>
             <div onClick={changeIcon} onDoubleClick={backToNormal}>
             {heart}
             </div>
            </div> 
         
         <div class="card-body">
-    <h4 class="card-title">{props.price}</h4>
-    <h6 class="card-subtitle mb-2 text-muted" style={{fontSize:'15px', fontWeight:'400',color:'rgba(0,47,52,.64);'}}>{props.title}</h6>
-    <p class="card-text"><small style={{fontSize:'9px',float:'left',marginTop:'23px',marginLeft:'0px'}}>{props.place}</small></p>
-    {/* <p className=' card-text'>{props.para}</p> */}
+    <h4 class="card-title">Hey</h4>
+    <h6 class="card-subtitle mb-2 text-muted">Hi</h6>
+    <p class="card-text"><small style={{fontSize:'11px',float:'left',marginTop:'23px',marginLeft:'0px'}}>WOW</small></p>
           <p class="card-text"><small style={{fontSize:'11px',float:'right',marginTop:'15px',marginLeft:'30px'}}>TODAY</small></p>
           
         </div>
         </div>
         </div>
-            </>
-        
+        </>
     )
 }
 
-export default PopularCard
+export default NewFreshCard

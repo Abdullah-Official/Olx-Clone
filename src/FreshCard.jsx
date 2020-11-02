@@ -3,8 +3,11 @@ import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
 import CardData from './CardData'
 import './FreshCard.css'
 import FavoriteIcon from '@material-ui/icons/Favorite';
-
+import firebase from './firebase'
+import db ,{storage} from './firebase'
 function FreshCard(props) {
+
+   
 
     const [heart,setHeart] = useState(<FavoriteBorderIcon className='heartIcon1'/>)
 
@@ -15,6 +18,7 @@ function FreshCard(props) {
     const backToNormal = () =>{
         setHeart(<FavoriteBorderIcon className='heartIcon1'/>)
     }
+
 
     return (
         <>
