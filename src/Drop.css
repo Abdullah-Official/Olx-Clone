@@ -1,0 +1,56 @@
+.hello{
+    font-size: 15px !important;
+    line-height: 20px !important;
+    font-weight: 400 !important;
+    /* color: rgba(0,47,52,.64); */
+}
+.details > h5{
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #002f34;
+}
+.viewEdit{
+    cursor: pointer !important;
+    font-size: 15px !important;
+    color: #002f34 !important;
+    text-decoration: underline !important;
+    font-weight: 500;
+}
+.op1 > span{
+    padding-left: 20px;
+    font-size: 36px !important;
+    font-weight: 400;
+    color: yellow !important;
+
+}
+.op1 > i{
+    color: #002f34;
+
+}
+.opt1{
+    padding: 0px !important;
+}
+.op1:hover{
+    background-color: #b7f0ee;
+    cursor: pointer;
+}
+.card123{
+    /* border: 2px solid red !important; */
+    height: auto !important;
+}
+
+.borderBot{
+    border-bottom: .5px solid lightgray;
+}
+.cardMain{
+    margin-top: 70px;
+    position: fixed !important;
+    z-index: 1111;
+}
+
+@media (min-width: 600px) {
+    .cardMain{
+        margin-right: 950px;
+    }
+}

@@ -9,6 +9,10 @@
     width: 100%;
     
 }
+.mega__menu{
+    /* height: 46px !important; */
+    padding: -5px;
+}
 .subMenu{
     font-size: 15px;
 }
@@ -46,4 +50,9 @@
 
 .mega__menu{
     box-shadow: 1px solid gray;
+}
+@media(max-width:600px){
+    .collapse2{
+        background-color: white;
+    }
 }

@@ -93,3 +93,13 @@
     color: aqua !important;
     fill: aqua;
   }
+  .dropBtn{
+      outline: none;
+      /* background-color: white; */
+      border: none;
+      background-color: #f8f9fa!important;
+     
+  }
+  .dropBtn:focus{
+      outline: none;
+  }

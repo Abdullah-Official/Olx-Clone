@@ -40,14 +40,18 @@
     
 }
 
-@media(max-width: 812px){
+@media(max-width: 600px) and (min-width:300px){
     .FreshMedia{
         margin-top: 880px !important;
     }
-}
-/* @media(max-width: 603px){
-    .FreshMedia{
-        margin-top: 300px !important;
-        
+    .mediaFresh{
+        align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 34px;
+    margin-left: -13px !important;
     }
-     */
+}
+
+    
+    
