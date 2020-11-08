@@ -157,7 +157,7 @@
     .navbar-collapse1{
         background-color: #f8f9fa!important;
         /* position: relative !important; */
-        height: 120px;
+        height: 100px;
     }
     .collapse2{
         background-color: white !important;
@@ -197,5 +197,44 @@
    
     .mainBotNav{
         padding-top: 70px;
+    }
+    .afterIcons{
+        display: flex !important;
+        padding: 5px;
+        margin: 5px;
+        justify-content: space-around !important;
+    }
+    .bellIcon, .AvatarIcon{
+        margin-top: 10px;
+    }
+    .collapseAfter{
+        background-color: white;
+    }
+    .sellBtn{
+        
+        /* margin-top: -70px; */
+        margin-bottom: 40px;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+    .AvatarIcon > button{
+        padding-left: 10px;
+    }
+    .modal-diaglog{
+        width: auto !important;
+    }
+    .carouselLogin {
+        margin-right: 40px !important;
+    }
+    .carouselLogin > p{
+        font-size:15px !important;
+        margin-right: 60px !important;
+        /* text-align: lrft !important; */
+    }
+    .carouselLogin > img{
+        /* margin-right: px !important; */
+        margin-left: -10px !important;
     }
 }

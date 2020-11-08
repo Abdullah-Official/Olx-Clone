@@ -23,7 +23,7 @@ const Drop = () => {
           <div class="card-body shadow w-100 card123 bg-white">
             <div className="contain">
               <div className="row borderBot pb-4">
-                <div className="col-md-3">
+                <div className="col-md-3 col-sm-4">
                   <img
                     src={user.photo}
                     className="rounded-circle"
@@ -32,7 +32,7 @@ const Drop = () => {
                     alt=""
                   />
                 </div>
-                <div className="col-md-9 ">
+                <div className="col-md-9 col-sm-8 ">
                  <div className="details ">
                  <span className="hello mb-2 text-muted">Hello,</span>
                   <h5 className='mb-0 mt-1'>{user.name}</h5>

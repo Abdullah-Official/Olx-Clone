@@ -61,7 +61,7 @@ const google = <svg width="22px" height="22px" viewBox="0 0 1024 1024" data-aut-
   <div className="logIn pl-5">
         <a href="#" className="navbar__login "  data-toggle="modal" data-target="#staticBackdrop">Login</a>
         <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog ">
+  <div class="modal-dialog " style={{width:'auto',heigh:'auto'}} >
     <div class="modal-content">
         <div className="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">

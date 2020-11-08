@@ -5,6 +5,7 @@ import CardData from "./CardData";
 import SellCard from "./SellCard";
 import firebase from "./firebase";
 import { useParams } from "react-router";
+import Loading from "./Loading";
 
 function FreshRecommend() {
     const {id} = useParams()
@@ -46,8 +47,8 @@ function FreshRecommend() {
       <div className="FreshMedia" style={{ height: "" }}>
         <div style={{ height: "auto", marginTop: "-90px" }}>
           <div className="container-fluid freshMain" style={{ width: "100%" }}>
-            <div className="row ">
-              <div className="row gx-5 gy-3 mediaFresh mx-auto">
+            <div className="row mediaFresh1">
+              <div className="row gx-5 gy-3 mediaFresh ">
                 <h6 className="heading">Fresh Recommendations</h6>
 
                 {DataOfCards ? (
@@ -61,7 +62,7 @@ function FreshRecommend() {
                     />
                   ))
                 ) : (
-                  <h2>Loading ...</h2>
+                  <Loading/>
                 )}
               </div>
             </div>

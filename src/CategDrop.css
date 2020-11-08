@@ -54,5 +54,6 @@
 @media(max-width:600px){
     .collapse2{
         background-color: white;
+        padding: 20px;
     }
 }

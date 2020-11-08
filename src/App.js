@@ -26,6 +26,7 @@ import AfterLogin from './AfterLogin';
 import BeforeLogin from './BeforeLogin';
 import { auth } from './firebase';
 import AfterApp from './AfterApp';
+import ScrollToTop from "react-scroll-to-top";
 
 
 function App() {
@@ -55,6 +56,7 @@ const dispatch = useDispatch()
       
       <>
       <div className="App">
+      <ScrollToTop label="Scroll" smooth color="#6f00ff" />
       {user ? 
     <>
      <AfterApp/> 

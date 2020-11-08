@@ -148,7 +148,7 @@ function NavbarAfter() {
   return (
     <>
       <div className="bg-light ">
-        <nav className="navbar nav fixed-top navbar-expand-lg navbar-light bg-light ">
+        <nav className="navbar mainTopNav nav fixed-top navbar-expand-lg navbar-light bg-light ">
           <NavLink className="navbar-brand ml-5" to="/">
             {logo}
           </NavLink>
@@ -163,7 +163,7 @@ function NavbarAfter() {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="collapse navbar-collapse collapseAfter" id="navbarSupportedContent">
             <div className="navbar__autocomplete mr-1">
               <SearchIcon className="auto_ICON" fontSize="large" />
               <Autocomplete

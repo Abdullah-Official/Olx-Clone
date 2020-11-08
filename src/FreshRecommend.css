@@ -40,17 +40,20 @@
     
 }
 
-@media(max-width: 600px) and (min-width:300px){
+@media(max-width: 660px) and (min-width:300px){
     .FreshMedia{
         margin-top: 880px !important;
     }
     .mediaFresh{
-        align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 34px;
-    margin-left: -13px !important;
+        display: block !important;
+        align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    padding: 30px;
+    margin-left: -15px !important;
+    padding-right: 10px !important; 
     }
+   
 }
 
     

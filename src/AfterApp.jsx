@@ -22,6 +22,7 @@ import PopularMotorcycles from './PopularMotorcycles'
 import './CategDrop.css'
 import NavbarAfter from './NavbarAfter';
 import SellForm from './SellForm';
+import ScrollToTop from "react-scroll-to-top";
 
 
 function AfterApp() {
@@ -30,6 +31,7 @@ function AfterApp() {
       
       <>
       <div className="App">
+        <ScrollToTop smooth />
       <NavbarAfter/>
       
       <Switch>
