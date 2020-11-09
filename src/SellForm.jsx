@@ -9,20 +9,38 @@ function SellForm() {
   
     const [price,setPrice] = useState('');
     const [product,setProduct] = useState('');
-    const [image,setImage] = useState('');
+    const [image,setImage] = useState(null)
     const [place,setPlace] = useState('');
+  
+    
+    // function upload(){
+    //   // const ref = firebase.storage().ref().child(`images/${image.name}`)
+    //   // console.log(ref)
+    //   console.log(image)
 
+    // }
     
 
   const sendData = (e) =>{
     e.preventDefault();
-    const dataRef = firebase.database().ref('Cards')
+    const ref = firebase.storage().ref().child(`images/${image.image.name}`).put(image.image)
+    ref.on('state_changed', function(snapshot){
+      
+     
+    }, function(error) {
+      
+    }, function() {
+     
+      ref.snapshot.ref.getDownloadURL().then(function(downloadURL) {
+        console.log('File available at', downloadURL);
+        const dataRef = firebase.database().ref('Cards')
     const data = {
       price,
       product,
-      image,
+      image : downloadURL,
       place
     }
+    
     try {
      if(price,product,image,place==''){
       alert("Please fill form correctly")
@@ -30,19 +48,25 @@ function SellForm() {
       dataRef.push(data)
       setPrice('')
       setProduct('')
-      setImage('')
+      setImage(downloadURL)
       setPlace('')
       alert('Your Card has been Submitted')
      }
     } catch (error) {
       alert(error.message)
     }
+      });
+    });
+    
+
+
+    
   }
 
     return (
       <>
         <div className="contaier-fluid my-auto ">
-          <h1 className="my-4 text-center">ADD YOUR PRODUCT</h1>
+          <h1 className="my-4 pt-5 text-center">ADD YOUR PRODUCT</h1>
           <div className="row m-3 justify-content-center">
             <div className="col-md-8  bg-light p-3">
               <form>
@@ -77,19 +101,17 @@ function SellForm() {
                     Upload Image
                   </label>
                   <input
-                    type="text"
+                    type="file"
                     className="form-control "
                     required
-                    value={image}
+                    // value={image}
                     id="file"
-                    onChange={(e) => setImage(e.target.value)}
+                    onChange={(e) => setImage({image : e.target.files[0]})}
                     placeholder="Enter image URL"
                   />
                   {/* <button>Upload</button> */}
                 </div>
-                <div className="uploadImg mt-1">
-                  <img src={image} width="auto" height="auto" />
-                </div>
+                
                 <div className="form-group ">
                   <label className="p-2" for="exampleInputPassword1">
                     Place
@@ -118,6 +140,8 @@ function SellForm() {
             </div>
           </div>
         </div>
+        {/* <button onClick={upload}>Click</button> */}
+
       </>
     );
 }

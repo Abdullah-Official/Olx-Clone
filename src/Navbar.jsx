@@ -25,160 +25,259 @@ const google = <svg width="22px" height="22px" viewBox="0 0 1024 1024" data-aut-
     return (
       <>
         <div className="bg-light mainTopNav">
-            <nav className="navbar nav  navbar-expand-lg navbar-light bg-light ">
-    <NavLink className="navbar-brand ml-5"  to="/">{logo}</NavLink>
-  <button className="navbar-toggler iconNav" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span className="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse navbar-collapse1" id="navbarSupportedContent">
-
-
-  <div className="navbar__autocomplete mr-1">
-      <SearchIcon className="auto_ICON" fontSize="large"/>
-  <Autocomplete
-      id="custom-input-demo"
-      className="autoCmplt_search"
-      options={options}
-      renderInput={(params) => (
-        <div style={{borderColor: 'none'}} ref={params.InputProps.ref}>
-          <input style={{borderColor: 'none',color:'#ccc'}} placeholder="Search city,area or loc..."  type="text" {...params.inputProps}  />
-        </div>
-      )}
-    />
-    <ExpandMoreIcon className="auto_ICON" fontSize="large"/>
-  </div>
-
-  <div className="navbar__searchField ml-3 ">
-  <div class="input-group navbar__search mb-3 mt-3">
-  <input type="text" class="form-control bigSearch" placeholder="Find Cars, Mobile Phones and more.." aria-label="Recipient's username" aria-describedby="basic-addon2"/>
-  <div class="input-group-append">
-    <span class="input-group-text seachFieldIcon" id="basic-addon2"><SearchIcon fontSize='large'/></span>
-  </div>
-</div>
-  </div>
-
-
-  <div className="logIn pl-5">
-        <a href="#" className="navbar__login "  data-toggle="modal" data-target="#staticBackdrop">Login</a>
-        <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog " style={{width:'auto',heigh:'auto'}} >
-    <div class="modal-content">
-        <div className="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-        </div>
-      <div class="modal-body">
-      
-   
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-  
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <div className="container-fluid ">
-          <div className="row">
-              <div className="col-md-10 offset-1">
-                    <div className="carouselLogin ">
-                        <img src="https://statics.olx.com.pk/external/base/img/loginEntryPointPost.webp"  alt=""/>
-                        <p className='ml-5  p1' >Help make OLX safer place to buy and sell</p>
+          <nav className="navbar nav  navbar-expand-lg navbar-light bg-light ">
+            <NavLink className="navbar-brand ml-5" to="/">
+              {logo}
+            </NavLink>
+            <button
+              className="navbar-toggler iconNav"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span className="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse navbar-collapse1"
+              id="navbarSupportedContent"
+            >
+              <div className="navbar__autocomplete mr-1">
+                <SearchIcon className="auto_ICON" fontSize="large" />
+                <Autocomplete
+                  id="custom-input-demo"
+                  className="autoCmplt_search"
+                  options={options}
+                  renderInput={(params) => (
+                    <div
+                      style={{ borderColor: "none" }}
+                      ref={params.InputProps.ref}
+                    >
+                      <input
+                        style={{ borderColor: "none", color: "#ccc" }}
+                        placeholder="Search city,area or loc..."
+                        type="text"
+                        {...params.inputProps}
+                      />
                     </div>
+                  )}
+                />
+                <ExpandMoreIcon className="auto_ICON" fontSize="large" />
               </div>
-          </div>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <div className="container">
-          <div className="row">
-              <div className="col-md-10 offset-1">
-              <div className="carouselLogin">
-                        <img src="https://statics.olx.com.pk/external/base/img/loginEntryPointFavorite.webp"  alt=""/>
-                        <p className='p2'>Contact and close deals faster</p>
-                    </div>
+
+              <div className="navbar__searchField ml-3 ">
+                <div class="input-group navbar__search mb-3 mt-3">
+                  <input
+                    type="text"
+                    class="form-control bigSearch"
+                    placeholder="Find Cars, Mobile Phones and more.."
+                    aria-label="Recipient's username"
+                    aria-describedby="basic-addon2"
+                  />
+                  <div class="input-group-append">
+                    <span
+                      class="input-group-text seachFieldIcon"
+                      id="basic-addon2"
+                    >
+                      <SearchIcon fontSize="large" />
+                    </span>
+                  </div>
+                </div>
               </div>
-          </div>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <div className="container">
-          <div className="row">
-              <div className="col-md-10 offset-1">
-              <div className="carouselLogin">
-                        <img src="https://statics.olx.com.pk/external/base/img/loginEntryPointChat.webp"  alt=""/>
-                        <p className='lastp'>Save all your favorite items in one place</p>
+
+              <div className="logIn pl-5">
+                <a
+                  href="#"
+                  className="navbar__login "
+                  data-toggle="modal"
+                  data-target="#staticBackdrop"
+                >
+                  Login
+                </a>
+                <div
+                  class="modal fade"
+                  id="staticBackdrop"
+                  data-backdrop="static"
+                  data-keyboard="false"
+                  tabindex="-1"
+                  aria-labelledby="staticBackdropLabel"
+                  aria-hidden="true"
+                >
+                  <div
+                    class="modal-dialog "
+                    style={{ width: "auto", heigh: "auto" }}
+                  >
+                    <div class="modal-content">
+                      <div className="modal-header">
+                        <button
+                          type="button"
+                          class="close"
+                          data-dismiss="modal"
+                          aria-label="Close"
+                        >
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div
+                          id="carouselExampleIndicators"
+                          class="carousel slide"
+                          data-ride="carousel"
+                        >
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <div className="container-fluid ">
+                                <div className="row">
+                                  <div className="col-md-10 offset-1">
+                                    <div className="carouselLogin ">
+                                      <img
+                                        src="https://statics.olx.com.pk/external/base/img/loginEntryPointPost.webp"
+                                        alt=""
+                                      />
+                                      <p className="ml-5  p1">
+                                        Help make OLX safer place to buy and
+                                        sell
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="carousel-item">
+                              <div className="container">
+                                <div className="row">
+                                  <div className="col-md-10 offset-1">
+                                    <div className="carouselLogin">
+                                      <img
+                                        src="https://statics.olx.com.pk/external/base/img/loginEntryPointFavorite.webp"
+                                        alt=""
+                                      />
+                                      <p className="p2">
+                                        Contact and close deals faster
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="carousel-item">
+                              <div className="container">
+                                <div className="row">
+                                  <div className="col-md-10 offset-1">
+                                    <div className="carouselLogin">
+                                      <img
+                                        src="https://statics.olx.com.pk/external/base/img/loginEntryPointChat.webp"
+                                        alt=""
+                                      />
+                                      <p className="lastp">
+                                        Save all your favorite items in one
+                                        place
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <a
+                            class="carousel-control-prev"
+                            href="#carouselExampleIndicators"
+                            role="button"
+                            data-slide="prev"
+                          >
+                            <span
+                              class="carousel-control-prev-icon "
+                              aria-hidden="true"
+                            >
+                              {prv}
+                            </span>
+                            <span class="sr-only prev__icon">Previous</span>
+                          </a>
+                          <a
+                            class="carousel-control-next"
+                            href="#carouselExampleIndicators"
+                            role="button"
+                            data-slide="next"
+                          >
+                            <span
+                              class="carousel-control-next-icon"
+                              aria-hidden="true"
+                            >
+                              {Nxt}
+                            </span>
+                            <span class="sr-only nxt__icon">{Nxt}</span>
+                          </a>
+                        </div>{" "}
+                        <br />
+                        <div className="btnLogin container-fluid">
+                          <div className="buttonLoad2 my-3">
+                            <button> Continues with Phone</button>
+                          </div>
+
+                          <div className="buttonLoad2 my-3">
+                            <button>
+                              <span>{fbIcon} </span> Continue with Facebook
+                            </button>
+                          </div>
+
+                          <div className="buttonLoad2 my-3">
+                            <button onClick={signIn}>
+                              <span>{google}</span> Continue with Google
+                            </button>
+                          </div>
+
+                          <div className="buttonLoad2 my-3">
+                            <button>Continue with Email</button>
+                          </div>
+                        </div>
+                        <div className="container footerM">
+                          <div className="t1">
+                            <p className="text-center">
+                              We won't share your personal details with anyone
+                            </p>
+                          </div>
+                          <div className="t2">
+                            <span className="sub">
+                              If you continue, you are accepting{" "}
+                            </span>
+                            <a
+                              href="https://help.olx.com.pk/hc/en-us"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              class="_24rr9"
+                              data-aut-id=""
+                            >
+                              <span>
+                                OLX Terms and Conditions and Privacy Policy
+                              </span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-              </div>    
-          </div>
-      </div>
-    </div> 
-  
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-<span class="carousel-control-prev-icon " aria-hidden="true">{prv}</span>
-    <span class="sr-only prev__icon">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-<span class="carousel-control-next-icon" aria-hidden="true">{Nxt}</span>
-    <span class="sr-only nxt__icon">{Nxt}</span>
-  </a>
-  
-</div> <br/>
-
-      
-            <div className="btnLogin container-fluid">
-            <div className="buttonLoad2 my-3">
-                <button> Continues with Phone</button>
-            
-           
+                  </div>
+                </div>
+              </div>
+              <div className="sellBtn pl-4">
+                <a
+                  href="#0"
+                  class="button "
+                  data-toggle="modal"
+                  data-target="#staticBackdrop"
+                >
+                  <span className="sell">
+                    <AddIcon style={{ fontSize: "30px" }} />
+                    Sell
+                  </span>
+                </a>
+              </div>
             </div>
-            
-            <div className="buttonLoad2 my-3">
-            <button><span>{fbIcon} </span> Continue with Facebook</button>
-            </div>
-           
-           
-            
-            <div className="buttonLoad2 my-3">
-            <button onClick={signIn}><span>{google}</span> Continue with Google</button>
-            </div>
-           
-            
-            
-            <div className="buttonLoad2 my-3">
-                <button>Continue with Email</button>
-            </div>
-           
-            </div>
-
-            <div className="container footerM">
-            <div className="t1">
-                <p className='text-center'>We won't share your personal details with anyone</p>
-            </div>
-            <div className="t2">
-                <span className='sub'>If you continue, you are accepting </span>
-                <a href="https://help.olx.com.pk/hc/en-us" target="_blank" rel="noopener noreferrer" class="_24rr9" data-aut-id=""><span>OLX Terms and Conditions and Privacy Policy</span></a>
-            </div>
-            </div>
-            
-      </div>
-     
-    </div>
-  </div>
-</div>
-      
-  </div>
-  <div className="sellBtn pl-4">
-  <a href="#0" class="button "  data-toggle="modal" data-target="#staticBackdrop">
-  <span className='sell'><AddIcon  style={{fontSize:'30px'}}/>Sell</span>
-</a>
-  </div>
-  
-  
-  </div>
-  
-</nav>
+          </nav>
         </div>
-        </>
-    )
+      </>
+    );
 }
 
 export default Navbar

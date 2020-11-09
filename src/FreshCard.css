@@ -9,8 +9,14 @@
 }
 .freshImg{
     margin-left: 50px;
-    height: 140px;
-    width: 190px !important;
+    max-height: 140px;
+    min-height: 140px;    
+    min-width: 200px !important;
+    max-width: 150px !important;
+    object-fit: contain !important;
+    justify-content: center !important;
+    align-items: center !important;
+
 }
 .card-text > span{
     /* font-size: 50px !important; */

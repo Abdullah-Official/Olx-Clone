@@ -1,9 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import './CategDrop.css'
 
 function CategDrop() {
-    return (
+  const ExpMore = <svg width="24px" height="24px" viewBox="0 0 1024 1024" data-aut-id="icon" class="" fill-rule="evenodd"><path class="rui-77aaa" d="M85.392 277.333h60.331l366.336 366.336 366.336-366.336h60.331v60.331l-408.981 409.003h-35.307l-409.045-409.003z"></path></svg>
+  const HideExp = <svg width="24px" height="24px" viewBox="0 0 1024 1024" data-aut-id="icon" class="" fill-rule="evenodd"><path class="rui-77aaa" d="M85.392 746.667h60.331l366.336-366.336 366.336 366.336h60.331v-60.331l-408.981-409.003h-35.307l-409.045 409.003z"></path></svg>
+  const [state,setState] = useState(ExpMore)
+  const drop_Down = () =>{
+    setState(HideExp)
+  }
+  return (
       <>
         <div className="container-fluid mb-0 mt-0 mega__menu">
           <div class="container-fluid mainBotNav">
@@ -26,7 +32,8 @@ function CategDrop() {
                     style={{ position: "static" }}
                   >
                     <a
-                      class="nav-link allCats dropdown-toggle"
+                    onClick={drop_Down}
+                      class="nav-link allCats "
                       data-toggle="dropdown"
                       href="#"
                       role="button"
@@ -34,7 +41,7 @@ function CategDrop() {
                       style={{ coloe: "black" }}
                       aria-expanded="false"
                     >
-                      All Categories
+                      All Categories <span > {state}</span>
                     </a>
 
                     <div

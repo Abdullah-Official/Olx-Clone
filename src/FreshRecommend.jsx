@@ -34,6 +34,7 @@ function FreshRecommend() {
     console.log(dataRef)
     dataRef.on("value", (snapshot) => {
       const data = snapshot.val();
+      console.log(data)
       const DataOfCards = [];
       for (let id in data) {
         DataOfCards.push(data[id]);
