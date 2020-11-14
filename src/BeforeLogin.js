@@ -23,6 +23,7 @@ import './CategDrop.css'
 import { useSelector } from 'react-redux';
 import {selectUser} from './features/userSlice'
 import SellForm from './SellForm';
+import DetailCard from './DetailCard';
 
 
 function BeforeLogin() {
@@ -44,6 +45,7 @@ function BeforeLogin() {
         <Route exact  path='/tablets' component={PopularTablets}/>
         <Route exact  path='/land-plots' component={PopularLand}/>
         <Route exact path='/sell-form' component={SellForm}/>
+        <Route exact path='/fresh-recom/:id' component={DetailCard}/>
         <Redirect component={Home}/>
       </Switch>
       <Footer/>

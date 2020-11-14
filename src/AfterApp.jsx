@@ -23,6 +23,7 @@ import './CategDrop.css'
 import NavbarAfter from './NavbarAfter';
 import SellForm from './SellForm';
 import ScrollToTop from "react-scroll-to-top";
+import DetailCard from './DetailCard';
 
 
 function AfterApp() {
@@ -44,6 +45,8 @@ function AfterApp() {
         <Route exact  path='/tablets' component={PopularTablets}/>
         <Route exact  path='/land-plots' component={PopularLand}/>
         <Route exact path='/sell-form' component={SellForm}/>
+        <Route exact path='/fresh-recom/:id' component={DetailCard}/>
+
         <Redirect component={Home}/>
       </Switch>
       <Footer/>

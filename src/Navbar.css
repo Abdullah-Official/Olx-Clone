@@ -238,3 +238,25 @@
         margin-left: -10px !important;
     }
 }
+
+@media (max-width:1280px) and (min-width:990px){
+    
+    .autoCmplt_search {
+        width: 169px !important;
+    }
+    .logIn{
+        padding-left: .5rem !important;
+    }
+    .sellBtn{
+            padding-left: .5rem!important;
+    }
+    .navbar__searchField{
+        margin-left: .25rem !important;
+    } 
+    .BrandNav{
+        margin-left: 1rem !important;
+    }
+    .navbar__search{
+        width: 500px !important;
+    }
+}

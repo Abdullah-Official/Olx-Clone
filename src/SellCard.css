@@ -1,6 +1,6 @@
 .sellCard1{
     width: 300px !important;
-    max-height: 300px !important;
+    max-height: 280px !important;
     background-color: #3a77ff !important;
     margin: 3px !important;
 }
@@ -23,7 +23,7 @@
     justify-content: center;
     display: flex;
     font-weight: 600;
-    margin-top: 80px !important;
+    margin-top: 20px !important;
     font-size: 14px;
     width: 100% !important;
 }

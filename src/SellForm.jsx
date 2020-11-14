@@ -1,6 +1,7 @@
-import React, { useState } from 'react'
+import React, { Component, useState } from 'react'
 import './FreshRecommend.css'
 import firebase from './firebase'
+import { Redirect } from 'react-router';
 
 
 function SellForm() {
@@ -48,7 +49,7 @@ function SellForm() {
       dataRef.push(data)
       setPrice('')
       setProduct('')
-      setImage(downloadURL)
+      setImage('')
       setPlace('')
       alert('Your Card has been Submitted')
      }
@@ -58,10 +59,10 @@ function SellForm() {
       });
     });
     
-
-
     
+   document.getElementById('send').disabled=true 
   }
+  
 
     return (
       <>
@@ -131,6 +132,8 @@ function SellForm() {
                     type="submit"
                     onClick={sendData}
                     className=" btn w-100 text-center my-2"
+                    id= 'send'
+                    
                   >
                     Submit
                   </button>

@@ -41,6 +41,16 @@
 
   }
   .card{
-    width: 300px !important;
+    /* width: 300px !important; */
     max-height: 270px !important;
+    
+}
+
+@media (max-width: 1230px) and (min-width:1000px){
+    .card{
+        width: 250px !important;
+    }
+    .freshImg{
+        min-width: 150px !important;
+    }
 }

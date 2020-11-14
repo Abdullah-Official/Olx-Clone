@@ -26,7 +26,7 @@ const google = <svg width="22px" height="22px" viewBox="0 0 1024 1024" data-aut-
       <>
         <div className="bg-light mainTopNav">
           <nav className="navbar nav  navbar-expand-lg navbar-light bg-light ">
-            <NavLink className="navbar-brand ml-5" to="/">
+            <NavLink className="navbar-brand BrandNav ml-5" to="/">
               {logo}
             </NavLink>
             <button

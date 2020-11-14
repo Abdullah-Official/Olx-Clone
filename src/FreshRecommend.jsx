@@ -39,7 +39,7 @@ function FreshRecommend() {
       for (let id in data) {
         DataOfCards.push(data[id]);
       }
-      setDataOfCards(DataOfCards);
+      setDataOfCards(DataOfCards.reverse());
     //   console.log(DataOfCards);
     });
   }, []);
@@ -48,8 +48,8 @@ function FreshRecommend() {
       <div className="FreshMedia" style={{ height: "" }}>
         <div style={{ height: "auto", marginTop: "-90px" }}>
           <div className="container-fluid freshMain" style={{ width: "100%" }}>
-            <div className="row mediaFresh1">
-              <div className="row gx-5 gy-3 mediaFresh ">
+            {/* <div className="row mediaFresh1"> */}
+              <div className="row p-3 gy-3 mediaFresh ">
                 <h6 className="heading">Fresh Recommendations</h6>
 
                 {DataOfCards ? (
@@ -66,7 +66,7 @@ function FreshRecommend() {
                   <Loading/>
                 )}
               </div>
-            </div>
+            {/* </div> */}
           </div>
           <div className="container">
             {fresh}

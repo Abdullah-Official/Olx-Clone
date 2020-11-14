@@ -30,6 +30,24 @@ import ScrollToTop from "react-scroll-to-top";
 
 
 function App() {
+  // useEffect(() => {
+  //   auth().onAuthStateChanged(function(user){
+  //     if (user) {
+        
+  //        displayName : user.displayName;
+  //        email : user.email;
+  //        emailVerified : user.emailVerified;
+  //        photoURL : user.photoURL;
+  //        isAnonymous : user.isAnonymous;
+  //        uid : user.uid;
+  //        providerData : user.providerData;
+        
+  //     } else {
+  //       // User is signed out.
+  //       // ...
+  //     }});
+  //   }, [])
+  
   const user = useSelector(selectUser)
 const dispatch = useDispatch()
     useEffect(() => {
